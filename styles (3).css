@@ -1,0 +1,113 @@
+*, *:before, *:after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#CCCCFF
+}
+
+.game-container {
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    text-shadow: 2px  2px white;
+}
+
+.game-board {
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    background-color: #9FE2BF;
+    transition: background-color 0.5s;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+/* Animation */
+/*.cell {*/
+/*    animation: cell-animation 0.5s infinite;*/
+/*}*/
+
+/*@keyframes cell-animation {*/
+/*    0% {*/
+/*        transform: scale(1);*/
+/*    }*/
+/*    50% {*/
+/*        transform: scale(1.1);*/
+/*    }*/
+/*    100% {*/
+/*        transform: scale(1);*/
+/*    }*/
+/*}*/
+
+.x-mark {
+    color: #00698f;
+    text-shadow: 0 0 10px #00698f, 0 0 20px #00698f, 0 0 30px #00698f;
+    animation: x-mark-animation 0.5s infinite;
+}
+
+/*@keyframes x-mark-animation {*/
+/*    0% {*/
+/*        transform: rotateY(0deg) rotateX(0deg);*/
+/*    }*/
+/*    50% {*/
+/*        transform: rotateY(30deg) rotateX(30deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotateY(0deg) rotateX(0deg);*/
+/*    }*/
+/*}*/
+
+.o-mark {
+    color: #ff9900;
+    text-shadow: 0 0 10px #ff9900, 0 0 20px #ff9900, 0 0 30px #ff9900;
+    animation: o-mark-animation 0.5s infinite;
+}
+
+/*@keyframes o-mark-animation {*/
+/*    0% {*/
+/*        transform: rotateY(0deg) rotateX(0deg);*/
+/*    }*/
+/*    50% {*/
+/*        transform: rotateY(30deg) rotateX(30deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotateY(0deg) rotateX(0deg);*/
+/*    }*/
+/*}*/
+
+
+
+
+
+
+.game-info {
+    margin-top: 50px;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: Comic Sans MS;
+    background-color: #9ACDc2;
+    
+}
